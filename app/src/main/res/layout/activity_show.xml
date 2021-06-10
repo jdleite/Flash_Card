@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_show"
+    tools:context=".ui.activity.Show">
+
+
+    <TextView
+        android:id="@+id/txt_front_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frente"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/txt_back_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verso"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_front_show"
+        app:layout_constraintStart_toStartOf="@+id/txt_front_show"
+        app:layout_constraintTop_toTopOf="@+id/txt_front_show" />
+
+    <Button
+        android:id="@+id/id_btn_one_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="1 dia"
+        android:backgroundTint="#F66262"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_back_show"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/id_btn_three_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F66262"
+        android:text="3 dias"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/id_btn_one_day"
+        app:layout_constraintTop_toBottomOf="@+id/txt_back_show"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/id_btn_one_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F66262"
+        android:text="1 semana"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/id_btn_three_days"
+        app:layout_constraintTop_toBottomOf="@+id/txt_back_show"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/id_btn_show_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar resposta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:backgroundTint="#F66262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_btn_three_days" />
+</androidx.constraintlayout.widget.ConstraintLayout>
